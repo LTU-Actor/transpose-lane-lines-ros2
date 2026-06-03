@@ -5,8 +5,8 @@ from launch_ros.actions import Node
 def launch_lines():
     return Node(
         package="transpose_lane_lines",
-        executable="single_mask_lines",
-        name="single_mask_lines",
+        executable="transpose_lines",
+        name="transpose_lane_lines",
         output="screen",
         remappings=[
             ("/routecam/image_raw", "/routecam/image_raw"),

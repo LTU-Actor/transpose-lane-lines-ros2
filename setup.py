@@ -5,7 +5,7 @@ from setuptools import setup
 package_name = "transpose_lane_lines"
 
 setup(
-    name=package_name,
+    name="transpose_lane_lines",
     version="0.0.0",
     packages=[package_name],
     data_files=[
@@ -21,8 +21,7 @@ setup(
     license="TODO: License declaration",
     entry_points={
         "console_scripts": [
-            "single_mask_lines = transpose_lane_lines.single_mask_lines:main",
-            "both_mask_lines = transpose_lane_lines.both_mask_lines:main",
+            "transpose_lines = transpose_lane_lines.transpose_lines:main",
         ],
     },
 )
